@@ -1,6 +1,15 @@
-#title {
- color: pink; 
-}
-* {
-  font-size: 12px;
-}
+/* [target]{
+ font-weight: bold; 
+} 存在の有無*/
+/* [href="#top"]{
+ font-weight: bold; 
+} 完全一致*/
+/* [href^="http"]{
+ font-weight: bold; 
+} 前方一致*/
+/* [href$="dotinstall"]{
+ font-weight: bold; 
+}後方一致  */
+[href*="com"]{
+ font-weight: bold; 
+}/*部分一致  */
