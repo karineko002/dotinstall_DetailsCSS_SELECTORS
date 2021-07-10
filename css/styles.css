@@ -1,15 +1,25 @@
-/* [target]{
- font-weight: bold; 
-} 存在の有無*/
-/* [href="#top"]{
- font-weight: bold; 
-} 完全一致*/
-/* [href^="http"]{
- font-weight: bold; 
-} 前方一致*/
-/* [href$="dotinstall"]{
- font-weight: bold; 
-}後方一致  */
-[href*="com"]{
- font-weight: bold; 
-}/*部分一致  */
+/* or */
+/* .info,p {
+  color: orange;
+} */
+/* and */
+/* h1.info{
+  color: orange;
+} */
+/* andできないもの（要素同士） */
+/* 一致しないからな！ */
+/* h1h2{
+  color: orange;
+} */
+/* and この場合はmainの配下でh1の場合 */
+/* main > h1{
+  color: orange;
+} */
+/* main配下のh1要素 */
+main h1{
+  color: orange;
+}
+/* pの直後のp */
+p + p{
+  border-top:1px solid orange;
+}
