@@ -1,10 +1,12 @@
-/* 擬似要素 */
-h1::before,
-h2::before{
-  content: '- ';
+.btn {
+  width: 100px;
+  background: skyblue;
+  text-align: center;
+  padding: 4px;
+  color: wheat;
+  cursor: pointer;
 }
-h1::after,
-h2::after{
-  /* content: ' -'; */
-  content: attr(data-subtitle);
+
+.btn:hover {
+  opacity: 0.8;
 }
