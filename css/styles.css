@@ -1,25 +1,10 @@
-/* or */
-/* .info,p {
-  color: orange;
-} */
-/* and */
-/* h1.info{
-  color: orange;
-} */
-/* andできないもの（要素同士） */
-/* 一致しないからな！ */
-/* h1h2{
-  color: orange;
-} */
-/* and この場合はmainの配下でh1の場合 */
-/* main > h1{
-  color: orange;
-} */
-/* main配下のh1要素 */
-main h1{
-  color: orange;
+/* 擬似要素 */
+h1::before,
+h2::before{
+  content: '- ';
 }
-/* pの直後のp */
-p + p{
-  border-top:1px solid orange;
+h1::after,
+h2::after{
+  /* content: ' -'; */
+  content: attr(data-subtitle);
 }
