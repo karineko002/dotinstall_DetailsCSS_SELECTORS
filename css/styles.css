@@ -5,8 +5,8 @@ class・属性・擬似クラス:
 ,要素・擬似要素:
  */
 h1 {
-  color: red;
-}/* 0,0,1 */
+  color: red !important;
+}/* 0,0,1 しかし!importantをつけると最優先になる*/
 h1#main.box {
   color: orange;
 }/* 1,1,1*/
@@ -17,3 +17,8 @@ section >#main.title {
 section#about > h1 {
   color: pink;
 }/* 1,0,2 */
+/* 詳細度をあげてみよう */
+#about >#main {
+color: goldenrod;
+}
+/* 優先度が同じなら最後に書いたものが優先だよ！ */
