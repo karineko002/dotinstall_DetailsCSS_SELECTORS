@@ -1,6 +1,19 @@
-/* li:empty {
-  background: maroon;
-} */
-li:not(:empty) {
-  background: maroon;
-}
+/* 詳細度 */
+/* 
+id:,
+class・属性・擬似クラス:
+,要素・擬似要素:
+ */
+h1 {
+  color: red;
+}/* 0,0,1 */
+h1#main.box {
+  color: orange;
+}/* 1,1,1*/
+section >#main.title {
+  color: blue;
+}/* 1,1,1 */
+/* 詳細度が同じ場合、後から書いたほうが優先される */
+section#about > h1 {
+  color: pink;
+}/* 1,0,2 */
